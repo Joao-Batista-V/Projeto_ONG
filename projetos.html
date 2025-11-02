@@ -4,69 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos e Voluntariado - ONG Impacto Social</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
-    <header>
-        <h1>ONG Impacto Social</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos e Voluntariado</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
+    <header class="main-header">
+        <h1 class="logo">ONG Impacto Social</h1>
+        
+        <button class="menu-toggle" aria-label="Abrir menu principal">
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+        </button>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item has-submenu active">
+                    <a href="projetos.html" class="nav-link">Projetos e Voluntariado</a>
+                    <ul class="submenu">
+                        <li><a href="projetos.html#projetos-sociais" class="submenu-link">Nossos Projetos</a></li>
+                        <li><a href="projetos.html#voluntariado" class="submenu-link">Seja Voluntário</a></li>
+                        <li><a href="projetos.html#doar" class="submenu-link">Como Doar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="cadastro.html" class="nav-link btn btn-primary">Cadastro</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="projetos-sociais">
+        <section id="projetos-sociais" class="section-padding">
             <h2>Nossos Projetos Sociais</h2>
+            <p class="section-description">Conheça as iniciativas que promovem educação, saúde e desenvolvimento sustentável em nossas comunidades.</p>
             
-            <article>
-                <h3>Educação para Todos</h3>
-                <img src="images/Projeto_Educa.png" alt="Crianças em sala de aula do projeto Educação para Todos">
-                <p>
-                    Este projeto foca em levar reforço escolar e atividades extracurriculares para crianças em situação de vulnerabilidade social. 
-                    Buscamos despertar o potencial de cada aluno.
-                </p>
-            </article>
+            <div class="grid-container project-cards-grid">
+                
+                <article class="project-card col-12 col-md-6 col-lg-4">
+                    <img src="images/Crianças_em_sala_de_aula_do_projeto_Educação_para_Todos.png" alt="Crianças em sala de aula do projeto Educação para Todos" class="responsive-image card-image">
+                    <h3>Educação para Todos</h3>
+                    <div class="tags-container">
+                        <span class="badge badge-education">Educação</span>
+                        <span class="badge badge-children">Crianças</span>
+                    </div>
+                    <p>
+                        Este projeto foca em levar reforço escolar e atividades extracurriculares para crianças em situação de vulnerabilidade social. 
+                        Buscamos despertar o potencial de cada aluno.
+                    </p>
+                    <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                </article>
 
-            <article>
-                <h3>Saúde na Comunidade</h3>
-                <img src="images/Profissionais_de_saude.png" alt="Profissionais de saúde atendendo a comunidade">
-                <p>
-                    Levamos atendimento médico e odontológico básico para áreas remotas, realizando mutirões de saúde e campanhas de prevenção.
-                </p>
-            </article>
+                
+                <article class="project-card col-12 col-md-6 col-lg-4">
+                    <img src="images/Profissionais_de_saúde_atendendo_a_comunidade.png" alt="Profissionais de saúde atendendo a comunidade" class="responsive-image card-image">
+                    <h3>Saúde na Comunidade</h3>
+                    <div class="tags-container">
+                        <span class="badge badge-health">Saúde</span>
+                        <span class="badge badge-community">Comunidade</span>
+                    </div>
+                    <p>
+                        Levamos atendimento médico e odontológico básico para áreas remotas, realizando mutirões de saúde e campanhas de prevenção.
+                    </p>
+                    <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                </article>
+
+                
+                <article class="project-card col-12 col-md-6 col-lg-4">
+                    <img src="images/Grupo_de_voluntários_felizes_trabalhando_juntos.png" alt="Voluntários em horta comunitária" class="responsive-image card-image">
+                    <h3>Desenvolvimento Sustentável</h3>
+                    <div class="tags-container">
+                        <span class="badge badge-environment">Meio Ambiente</span>
+                        <span class="badge badge-sustainability">Sustentabilidade</span>
+                    </div>
+                    <p>
+                        Incentivamos a criação de hortas comunitárias e práticas ecológicas, promovendo a segurança alimentar e o respeito ao meio ambiente.
+                    </p>
+                    <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                </article>
+
+                </div>
         </section>
 
-        <section id="voluntariado">
-            <h2>Seja um Voluntário</h2>
-            <img src="images/Voluntarios.png" alt="Grupo de voluntários felizes trabalhando juntos">
-            <p>
-                O voluntariado é a alma da nossa organização. Precisamos de pessoas comprometidas para atuar em diversas frentes, 
-                desde o administrativo até a linha de frente dos projetos.
-            </p>
-            <p>
-                Se você tem tempo e vontade de ajudar, <a href="cadastro.html">cadastre-se agora</a> e venha fazer a diferença.
-            </p>
+        <section id="voluntariado" class="section-padding section-light-bg">
+            <div class="grid-container align-items-center">
+                <div class="col-12 col-md-6 col-lg-7">
+                    <h2>Seja um Voluntário</h2>
+                    <p>
+                        O voluntariado é a alma da nossa organização. Precisamos de pessoas comprometidas para atuar em diversas frentes, 
+                        desde o administrativo até a linha de frente dos projetos.
+                    </p>
+                    <p>
+                        Se você tem tempo e vontade de ajudar, <a href="cadastro.html" class="text-link">cadastre-se agora</a> e venha fazer a diferença.
+                    </p>
+                    <a href="cadastro.html" class="btn btn-primary">Cadastre-se para Ser Voluntário</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5">
+                    <img src="images/Grupo_de_voluntários_felizes_trabalhando_juntos.png" alt="Grupo de voluntários felizes trabalhando juntos" class="responsive-image section-image">
+                </div>
+            </div>
         </section>
 
-        <section id="doar">
-            <h2>Como Doar</h2>
-            <p>
-                Sua contribuição financeira é vital para a manutenção dos nossos projetos. Com ela, compramos materiais, 
-                medicamentos e custeamos a infraestrutura necessária.
-            </p>
-            <p>
-                Você pode doar de forma segura através de PIX, boleto ou cartão de crédito. Qualquer valor é bem-vindo!
-            </p>
-            <p><strong>Chave PIX (CNPJ):</strong> 12.345.678/0001-99</p>
+        <section id="doar" class="section-padding">
+            <div class="grid-container">
+                <div class="col-12 col-lg-8 offset-lg-2 text-center">
+                    <h2>Como Doar</h2>
+                    <p class="section-description">
+                        Sua contribuição financeira é vital para a manutenção dos nossos projetos. Com ela, compramos materiais, 
+                        medicamentos e custeamos a infraestrutura necessária.
+                    </p>
+                    <p>
+                        Você pode doar de forma segura através de PIX, boleto ou cartão de crédito. Qualquer valor é bem-vindo!
+                    </p>
+                    <p class="highlight-text"><strong>Chave PIX (CNPJ):</strong> 12.345.678/0001-99</p>
+                    <a href="#" class="btn btn-primary btn-large">Doar Agora</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; 2025 ONG Impacto Social. Todos os direitos reservados.</p>
+        <ul class="footer-nav">
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+        </ul>
     </footer>
 
 </body>

@@ -4,46 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG Impacto Social - Página Inicial</title>
-</head>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
 <body>
     
-    <header>
-        <h1>ONG Impacto Social</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos e Voluntariado</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
+    <header class="main-header">
+        <h1 class="logo">ONG Impacto Social</h1>
+        
+        <button class="menu-toggle" aria-label="Abrir menu principal">
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon"></span>
+        </button>
+
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item has-submenu">
+                    <a href="projetos.html" class="nav-link">Projetos e Voluntariado</a>
+                    <ul class="submenu">
+                        <li><a href="projetos.html#projetos-sociais" class="submenu-link">Nossos Projetos</a></li>
+                        <li><a href="projetos.html#voluntariado" class="submenu-link">Seja Voluntário</a></li>
+                        <li><a href="projetos.html#doar" class="submenu-link">Como Doar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="cadastro.html" class="nav-link btn btn-primary">Cadastro</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="sobre">
-            <h2>Sobre Nossa Organização</h2>
-            <img src="images/Banner_ilustrativo_da_missão_da_ONG.png" alt="Banner ilustrativo da missão da ONG">
-            <p>
-                Bem-vindo à ONG Impacto Social. Nossa missão é promover a mudança positiva em comunidades carentes através de educação, saúde e desenvolvimento sustentável.
-            </p>
-            <p>
-                Fundada em 2010, já impactamos a vida de milhares de pessoas, acreditando que pequenas ações, quando somadas, geram grandes transformações.
-            </p>
+        <section id="sobre" class="section-padding">
+            <div class="grid-container align-items-center">
+                <div class="col-12 col-md-6 col-lg-7">
+                    <h2>Sobre Nossa Organização</h2>
+                    <p>
+                        Bem-vindo à ONG Impacto Social. Nossa missão é promover a mudança positiva em comunidades carentes através de educação, saúde e desenvolvimento sustentável.
+                    </p>
+                    <p>
+                        Fundada em 2010, já impactamos a vida de milhares de pessoas, acreditando que pequenas ações, quando somadas, geram grandes transformações.
+                    </p>
+                    <a href="projetos.html" class="btn btn-secondary">Conheça Nossos Projetos</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5">
+                    <img src="images/Banner_ilustrativo_da_missão_da_ONG.png" alt="Banner ilustrativo da missão da ONG" class="responsive-image section-image">
+                </div>
+            </div>
         </section>
 
-        <section id="contato">
-            <h2>Informações de Contato</h2>
-            <p>Entre em contato conosco e faça parte desta mudança.</p>
-            <ul>
-                <li><strong>Endereço:</strong> Rua da Esperança, 123 - Centro</li>
-                <li><strong>Telefone:</strong> (11) 5555-4444</li>
-                <li><strong>E-mail:</strong> <a href="mailto:contato@impactosocial.org">contato@impactosocial.org</a></li>
-            </ul>
-            <img src="https://via.placeholder.com/800x300.png?text=Localização" alt="Mapa da localização da ONG">
+        <section id="contato" class="section-padding section-light-bg">
+            <div class="grid-container align-items-center">
+                <div class="col-12 col-md-6">
+                    <h2>Informações de Contato</h2>
+                    <p>Entre em contato conosco e faça parte desta mudança.</p>
+                    <ul class="contact-list">
+                        <li><strong>Endereço:</strong> Rua da Esperança, 123 - Centro</li>
+                        <li><strong>Telefone:</strong> (11) 5555-4444</li>
+                        <li><strong>E-mail:</strong> <a href="mailto:contato@impactosocial.org">contato@impactosocial.org</a></li>
+                    </ul>
+                    <a href="cadastro.html" class="btn btn-primary">Quero me Cadastrar</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="images/mapa_localizacao.png" alt="Mapa da localização da ONG" class="responsive-image section-image">
+                    </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; 2025 ONG Impacto Social. Todos os direitos reservados.</p>
+        <ul class="footer-nav">
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+        </ul>
     </footer>
 
 </body>
